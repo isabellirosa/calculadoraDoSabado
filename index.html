@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linkando HTML com JS</title>
 </head>
+
 <body>
-    <input type="button" value="Botao 1" id="bt1" onclick="clq1()">
-    <input type="button" value="Botao 2" id="bt2">
-    <br>
+    <select name="calculadora" id="idioma">
+        <option value="es">Espanhol</option>
+        <option value="en">Inglês</option>
+        <option value="pt" selected="select">Português</option>
+    </select>
+    <h1 id="calculadora"> Calculadora</h1>
     <input type="text" id="valor1">
-    <p>+</p>
     <input type="text" id="valor2">
+
+    <p>
+        <input type="button" value="soma" id="btSoma">
+        <input type="button" value="subtração" id="btSubtração">
+        <input type="button" value="multiplicação" id="btMultiplicação">
+        <input type="button" value="divisão" id="btDivisão">
+    </p>
     <p id="resultado"></p>
 </body>
-    <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
 </html>
