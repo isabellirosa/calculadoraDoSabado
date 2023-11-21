@@ -4,35 +4,39 @@ let valor2 = document.querySelector("#valor2");
 let calculadora=document.querySelector("#calculadora");
 let resultado = document.querySelector("#resultado");
 
-valor1.addEventListener("keyup", function () {
-    somar(Number(valor1.value), Number(valor2.value));
-});
-
-valor2.addEventListener("keyup", function () {
-    somar(Number(valor1.value), Number(valor2.value));
-});
-
 let btSoma = document.querySelector("#btSoma");
 btSoma.addEventListener("click", function () {
     somar(Number(valor1.value), Number(valor2.value))
 });
 let btSubtração = document.querySelector("#btSubtração");
-btSoma.addEventListener("click", function () {
-    somar(Number(valor1.value), Number(valor2.value))
+btSubtração.addEventListener("click", function () {
+    subtrair(Number(valor1.value), Number(valor2.value))
 });
 let btMultiplicação = document.querySelector("#btMultiplicação");
-btSoma.addEventListener("click", function () {
-    somar(Number(valor1.value), Number(valor2.value))
+btMultiplicação.addEventListener("click", function () {
+    multiplicar(Number(valor1.value), Number(valor2.value))
 });
 let btDivisão = document.querySelector("#btDivisão");
-btSoma.addEventListener("click", function () {
-    somar(Number(valor1.value), Number(valor2.value))
+btDivisão.addEventListener("click", function () {
+    dividir(Number(valor1.value), Number(valor2.value))
 });
 function somar(a, b) {
     let soma = a + b;
     resultado.innerHTML = soma;
 }
-let selectedLanguage = document.querySelector("#idioma");
+function subtrair(a, b) {
+    let subtracao = a - b;
+    resultado.innerHTML = subtracao;
+}
+function dividir(a, b) {
+    let divisao = a / b;
+    resultado.innerHTML = divisao;
+}
+function multiplicar(a, b) {
+    let multiplicacao = a * b;
+    resultado.innerHTML = multiplicacao;
+}
+/*let selectedLanguage = document.querySelector("#idioma");
 selectedLanguage.addEventListener("change", function () {
     if (this.value == "pt") {
         btSoma.value = "Soma";
@@ -56,4 +60,5 @@ selectedLanguage.addEventListener("change", function () {
         calculadora.textContent = "Calculadora";
 
     }
-})
+})*/
+
