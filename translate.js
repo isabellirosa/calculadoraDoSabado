@@ -25,10 +25,7 @@ function setLanguage(novoIdioma){
     let btSoma = document.querySelector("#btSoma");
     btSoma.value = novoIdioma.soma;
     let btSubtração = document.querySelector("#btSubtração");
-    btSubtração.value = novoIdioma.subtração;
-    let btSoma = document.querySelector("#btSoma");
-    btSoma.value = novoIdioma.soma;
-    let btSoma = document.querySelector("#btSoma");
-    btSoma.value = novoIdioma.soma;
+    btSubtração.value = novoIdioma.subtracao;
+
 
 }
