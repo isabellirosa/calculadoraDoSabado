@@ -1,7 +1,7 @@
 
 let valor1 = document.querySelector("#valor1");
 let valor2 = document.querySelector("#valor2");
-let calculadora=document.querySelector("#calculadora");
+let titulo=document.querySelector("#titulo");
 let resultado = document.querySelector("#resultado");
 
 let btSoma = document.querySelector("#btSoma");

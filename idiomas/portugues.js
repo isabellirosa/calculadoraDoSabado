@@ -4,6 +4,6 @@ function portugues(){
         subtracao : "Subtração",
         multiplicacao : "Multiplicação",
         divisao : "divisão",
-        titulo: "Calculadora"
+        titulo: "Calculadora",
     }
 }

@@ -4,6 +4,6 @@ function espanhol(){
         subtracao : "sustracción",
         multiplicacao : "multiplicación",
         divisao : "división",
-        titulo: "Calculadora"
+        titulo: "Calculadora",
     }
 }

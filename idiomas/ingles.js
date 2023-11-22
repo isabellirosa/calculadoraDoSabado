@@ -4,6 +4,6 @@ function ingles(){
         subtracao : "subtraction",
         multiplicacao : "multiplication",
         divisao : "division",
-        titulo: "Calculator"
+        titulo: "Calculator",
     }
 }

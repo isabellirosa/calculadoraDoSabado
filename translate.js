@@ -17,7 +17,7 @@ function(){
 });
 
 function translate(idioma){
-     let traducao = (idioma == "br")? portugues():(idioma == "es")? espanhol():ingles();
+     let traducao = (idioma == "pt")? portugues():(idioma == "es")? espanhol():(idioma == "en")?ingles():null;
      setLanguage(traducao);
 }
 
@@ -26,6 +26,11 @@ function setLanguage(novoIdioma){
     btSoma.value = novoIdioma.soma;
     let btSubtração = document.querySelector("#btSubtração");
     btSubtração.value = novoIdioma.subtracao;
-
+    let btDivisão = document.querySelector("#btDivisão");
+    btDivisão.value = novoIdioma.divisao;
+    let btMultiplicação = document.querySelector("#btMultiplicação");
+    btMultiplicação.value = novoIdioma.multiplicacao;
+    let titulo = document.querySelector("#titulo");
+    titulo.innerHTML = novoIdioma.titulo;
 
 }
